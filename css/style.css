@@ -79,7 +79,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 #bg1 {
     background: url(../img/bj1.jpg) no-repeat center/cover;
     -webkit-animation: bg1 linear infinite 7s;
-    animation: bg1 linear infinite 7s alternate;
+    animation: bg1 linear infinite 7s ;
     z-index:3;
 
 }
@@ -92,7 +92,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 #bg3 {
     background: url(../img/bj3.jpg) no-repeat center/cover;
     -webkit-animation: bg3 linear infinite 7s;
-    animation: bg3 linear infinite 7s alternate;
+    animation: bg3 linear infinite 7s ;
     z-index:1;
 }
 
@@ -318,7 +318,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     font-size: 15.5px;
     color: #000;
     line-height: 30px;
-    background: url(../images/tit_big.png) no-repeat center;
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -755,30 +754,40 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     top:500px;
     left:640px;
 }
+.p4-list li .p4-li6{
+    top:500px;
+    left:800px;
+}
 
+.li:hover li:nth-child(5){
+    -webkit-transform:rotate(10deg) translateX(100px);
+    -ms-transform:rotate(10deg) translateX(100px);
+    -moz-transform:rotate(10deg) translateX(100px);
+    transform:rotate(10deg) translateX(100px);
+}
 .li:hover li:nth-child(4){
-    -webkit-transform:rotate(10deg) translateX(50px);
-    -ms-transform:rotate(10deg) translateX(50px);
-    -moz-transform:rotate(10deg) translateX(50px);
+    -webkit-transform:rotate(10deg) translateX(150px);
+    -ms-transform:rotate(10deg) translateX(150px);
+    -moz-transform:rotate(10deg) translateX(150px);
     transform:rotate(10deg) translateX(150px);
 }
 .li:hover li:nth-child(3){
-    -webkit-transform:rotate(3deg) translateX(75px);
-    -ms-transform:rotate(3deg) translateX(75px);
-    -moz-transform:rotate(3deg) translateX(75px);
+    -webkit-transform:rotate(3deg) translateX(175px);
+    -ms-transform:rotate(3deg) translateX(175px);
+    -moz-transform:rotate(3deg) translateX(175px);
     transform:rotate(3deg) translateX(175px);
 }
 .li:hover li:nth-child(2){
-    -webkit-transform:rotate(-2deg) translateX(-50px);
-    -ms-transform:rotate(-2deg) translateX(-50px);
-    -moz-transform:rotate(-2deg) translateX(-50px);
+    -webkit-transform:rotate(-2deg) translateX(-130px);
+    -ms-transform:rotate(-2deg) translateX(-130px);
+    -moz-transform:rotate(-2deg) translateX(-130px);
     transform:rotate(-2deg) translateX(-130px);
 }
 .li:hover li:nth-child(1){
-    -webkit-transform:rotate(-8deg) translateX(-75px);
-    -ms-transform:rotate(-8deg) translateX(-75px);
-    -moz-transform:rotate(-8deg) translateX(-75px);
-    transform:rotate(-8deg) translateX(-175px);
+    -webkit-transform:rotate(-8deg) translateX(-190px);
+    -ms-transform:rotate(-8deg) translateX(-190px);
+    -moz-transform:rotate(-8deg) translateX(-190px);
+    transform:rotate(-8deg) translateX(-190px);
 
 }
 
@@ -786,36 +795,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 /*4444444444444444444aaaaaaaaaaaaaaaaaaaa*/
 
-@-webkit-keyframes changeYuan {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.2;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes changeYuan {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.2;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.changeYuan {
-    -webkit-animation-name: changeYuan;
-    animation-name: changeYuan;
-}
 
 .active .p4-li1{
     -moz-transform: rotate(8deg) translateX(150px) translateY(-550px);
@@ -845,22 +824,32 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     -webkit-transition-delay: 1.8s;
 }
 .active .p4-li4{
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg)  translateX(-150px) translateY(-550px);
+    -ms-transform: rotate(-10deg)  translateX(-150px) translateY(-550px);
+    -webkit-transform: rotate(-10deg)  translateX(-150px) translateY(-550px);
     transform: rotate(-10deg)  translateX(-150px) translateY(-550px);
     opacity: 1;
     transition-delay: 2s;
     -webkit-transition-delay: 2s;
 }
 .active .p4-li5{
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg) translateX(-350px) translateY(-550px);
+    -ms-transform: rotate(-5deg) translateX(-350px) translateY(-550px);
+    -webkit-transform: rotate(-5deg) translateX(-350px) translateY(-550px);
     transform: rotate(-5deg)  translateX(-350px) translateY(-550px);
     opacity: 1;
     transition-delay: 2.2s;
     -webkit-transition-delay: 2.2s;
+}
+.active .p4-li6{
+    -moz-transform: rotate(2deg)translateX(-600px) translateY(-500px);
+    -ms-transform: rotate(2deg) translateX(-600px) translateY(-500px);
+    -webkit-transform: rotate(2deg) translateX(-600px) translateY(-500px);
+    transform: rotate(2deg) translateX(-600px) translateY(-500px);
+    opacity: 1;
+    transition: all 1s;
+    transition-delay: 2.4s;
+    -webkit-transition-delay: 2.4s;
 }
 
 
